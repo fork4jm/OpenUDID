@@ -81,7 +81,10 @@ static int const kOpenUDIDRedundancySlots = 100;
 //
 + (void) _setDict:(id)dict forPasteboard:(id)pboard {
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR		
-    [pboard setData:[NSKeyedArchiver archivedDataWithRootObject:dict] forPasteboardType:kOpenUDIDDomain];
+//    [pboard setData:[NSKeyedArchiver archivedDataWithRootObject:dict] forPasteboardType:kOpenUDIDDomain];
+    [pboard setItems:@[@{ kOpenUDIDDomain : [NSKeyedArchiver archivedDataWithRootObject:dict], }] options:@{
+        UIPasteboardOptionLocalOnly:@(YES)
+    }];
 #else
     [pboard setData:[NSKeyedArchiver archivedDataWithRootObject:dict] forType:kOpenUDIDDomain];
 #endif
