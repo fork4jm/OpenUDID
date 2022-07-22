@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "002and001" => "xxewz1@163.com" }
   s.source       = { :git => "https://github.com/fork4jm/OpenUDID.git", :tag => "#{s.version}" }
-  s.module_name = 'OpenUDID'
+  s.module_name = 'JMOpenUDID'
   s.ios.deployment_target = '11.0'
   s.frameworks   = "Foundation", "UIKit"
   s.source_files  = "*.{h,m}"
