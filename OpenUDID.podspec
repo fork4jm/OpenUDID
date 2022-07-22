@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "OpenUDID"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "OpenUDID"
   s.homepage     = "https://github.com/fork4jm/OpenUDID"
   s.license      = "MIT"
