@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "JMOpenUDID"
-  s.version      = "1.1.0"
-  s.summary      = "JMOpenUDID"
+  s.name         = "OpenUDID"
+  s.version      = "1.1.1"
+  s.summary      = "OpenUDID"
   s.homepage     = "https://github.com/fork4jm/OpenUDID"
   s.license      = "MIT"
   s.author       = { "002and001" => "xxewz1@163.com" }
   s.source       = { :git => "https://github.com/fork4jm/OpenUDID.git", :tag => "#{s.version}" }
-  s.module_name = 'JMOpenUDID'
+  s.module_name = 'OpenUDID'
   s.ios.deployment_target = '11.0'
   s.frameworks   = "Foundation", "UIKit"
   s.source_files  = "*.{h,m}"
