@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'OpenUDID'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'OpenUDID 组件.'
   s.description      = <<-DESC
 好用的获取OpenUDID组件
